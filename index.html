@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>techjobs</title>
+</head>
+<body> 
+    <!------------header------------->
+    <section class="header">
+
+        <div class="menu-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./image/images-Logo.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Job Seekers</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Vacancies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ">Sing Up</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ">Sign In</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <div class="banner text-center">
+
+            <h1>Jobs Around You</h1>
+            <p>Meeting Point of Full-Time, Part-Time and Freelance Job Providers and Job Seekers
+                Find a Job Vacancy </p>            
+        </div>
+    </section>
+    <!-------search job----------->
+<div class="search-job text-center">
+<input type="text" class="form-control"placeholder="Type the Job title">
+<input type="text"class="form-control"placeholder="location">
+<select id="job_cat_id" name="job_cat_id" class="form-control chosen-select" orig_id="" title="Select job category"><option value="" disabled selected> Select the Job Category</option>                                                    <option value="1" data-scode="Civil Engineer">Civil Engineer</option>
+    <option value="7" data-scode="Construction Project Manager">Construction Project Manager</option>
+    <option value="8" data-scode="Multi - disciplinary Project Manager">Multi - disciplinary Project Manager</option>
+    <option value="9" data-scode="Site Engineer">Site Engineer</option>
+    <option value="10" data-scode="Planning Engineers">Planning Engineers</option>
+    <option value="11" data-scode="Highway/Pavement Design Engineers">Highway/Pavement Design Engineers</option>
+    <option value="12" data-scode="Material Engineers">Material Engineers</option>
+    <option value="13" data-scode="Structural Engineers">Structural Engineers</option>
+    <option value="14" data-scode="Mechanical Engineer">Mechanical Engineer</option>
+    <option value="15" data-scode="Environmental Engineer">Environmental Engineer</option>
+    <option value="16" data-scode="Chemical Engineer">Chemical Engineer</option>
+    <option value="17" data-scode="Geo technical Engineer">Geo technical Engineer</option>
+    <option value="18" data-scode="Surveyors">Surveyors</option>
+    <option value="19" data-scode="Quantity Surveyor">Quantity Surveyor</option>
+    <option value="20" data-scode="Electronic Engineer">Electronic Engineer</option>
+    <option value="22" data-scode="MEP Engineers">MEP Engineers</option>
+    <option value="23" data-scode="Construction Supervisor">Construction Supervisor</option>
+    <option value="24" data-scode="Architects">Architects</option>
+    <option value="25" data-scode="Hydrologists">Hydrologists</option>
+    <option value="26" data-scode="Laboratory Technicians">Laboratory Technicians</option>
+    <option value="27" data-scode="Draughtsman">Draughtsman</option>
+    <option value="32" data-scode="Quality Assurance Engineer">Quality Assurance Engineer</option>
+    <option value="33" data-scode="Accounts Assistant">Accounts Assistant</option>
+    <option value="34" data-scode="Associate Project Manager">Associate Project Manager</option>
+    <option value="35" data-scode="Marketing Agent">Marketing Agent</option>
+    <option value="36" data-scode="Technical Writer">Technical Writer</option>
+    <option value="37" data-scode="Inventor">Inventor</option>
+    <option value="38" data-scode="Director">Director</option>
+    <option value="39" data-scode="Web Developer">Web Developer</option>
+    <option value="40" data-scode="Software Engineer">Software Engineer</option>
+    <option value="41" data-scode="Network Administrator">Network Administrator</option>
+    <option value="42" data-scode="UX Designer &amp; UI Developer">UX Designer &amp; UI Developer</option>
+    <option value="43" data-scode="Cloud Architect">Cloud Architect</option>
+    <option value="44" data-scode="Application Developer">Application Developer</option>
+    <option value="45" data-scode="Store Manager">Store Manager</option>
+    <option value="46" data-scode="Sales Associate">Sales Associate</option>
+    <option value="47" data-scode="Construction Worker">Construction Worker</option>
+    <option value="48" data-scode="Plumber">Plumber</option>
+    <option value="49" data-scode="Carpenter">Carpenter</option>
+    <option value="50" data-scode="Electrician">Electrician</option>
+    <option value="51" data-scode="Painter">Painter</option>
+    <option value="52" data-scode="Welder">Welder</option>
+    <option value="53" data-scode="Building Inspector">Building Inspector</option>
+    <option value="54" data-scode="Pipefitter">Pipefitter</option>
+    <option value="55" data-scode="Iron Worker">Iron Worker</option>
+    <option value="56" data-scode="Office Manager">Office Manager</option>
+    <option value="57" data-scode="Receptionist">Receptionist</option>
+    <option value="58" data-scode="Customer Service Manager">Customer Service Manager</option>
+    <option value="59" data-scode="Operations Manager">Operations Manager</option>
+    <option value="60" data-scode="Accounting Analyst">Accounting Analyst</option>
+    <option value="61" data-scode="Finance Manager">Finance Manager</option>
+    <option value="62" data-scode="Data Analyst">Data Analyst</option>
+    <option value="63" data-scode="Business Analyst">Business Analyst</option>
+    <option value="64" data-scode="Market Researcher">Market Researcher</option>
+    <option value="65" data-scode="Translator">Translator</option>
+    <option value="66" data-scode="Designer">Designer</option>
+    <option value="67" data-scode="Graphic Designer">Graphic Designer</option>
+    <option value="68" data-scode="Marketing Consultant">Marketing Consultant</option>
+    <option value="69" data-scode="Public Relations Officer">Public Relations Officer</option>
+    <option value="70" data-scode="Administrative Assistant">Administrative Assistant</option>
+    <option value="71" data-scode="Clerk">Clerk</option>
+    <option value="72" data-scode="Bookkeeper">Bookkeeper</option>
+    <option value="73" data-scode="Account Executive">Account Executive</option>
+    <option value="75" data-scode="Business Manager">Business Manager</option>
+    <option value="77" data-scode="Administrative Manager">Administrative Manager</option>
+    <option value="78" data-scode="Risk Manager">Risk Manager</option>
+    <option value="79" data-scode="Human Resources Manager">Human Resources Manager</option>
+    <option value="81" data-scode="Secretary">Secretary</option>
+    <option value="82" data-scode="Accountant">Accountant</option>
+    <option value="83" data-scode="Sales Staff">Sales Staff</option>
+    <option value="84" data-scode="Management Consultant">Management Consultant</option>
+    <option value="86" data-scode="Marketing Staff">Marketing Staff</option>
+    <option value="87" data-scode="Administrative Specialist">Administrative Specialist</option>
+    <option value="89" data-scode="Executive Positions">Executive Positions</option>
+    <option value="90" data-scode="Higher Management Positions">Higher Management Positions</option>
+    <option value="91" data-scode="IT Professional">IT Professional</option>
+    <option value="92" data-scode="SQL Developer">SQL Developer</option>
+    <option value="93" data-scode="Web Designer">Web Designer</option>
+    <option value="94" data-scode="Help Desk Worker/Desktop Support">Help Desk Worker/Desktop Support</option>
+    <option value="95" data-scode="Data Entry">Data Entry</option>
+    <option value="96" data-scode="Computer Programmer">Computer Programmer</option>
+    <option value="98" data-scode="Information Security Analyst">Information Security Analyst</option>
+    <option value="99" data-scode="Artificial Intelligence Engineer">Artificial Intelligence Engineer</option>
+    <option value="100" data-scode="IT Manager">IT Manager</option>
+    <option value="101" data-scode="Technical Specialist">Technical Specialist</option>
+    <option value="102" data-scode="Project Manager">Project Manager</option>
+    <option value="103" data-scode="Construction Manager">Construction Manager</option>
+    <option value="104" data-scode="QA/QC">QA/QC</option>
+    <option value="105" data-scode="Technical Officer">Technical Officer</option>
+    <option value="106" data-scode="Drafter">Drafter</option>
+    <option value="107" data-scode="Safety Staff">Safety Staff</option>
+    <option value="108" data-scode="Construction Foreman">Construction Foreman</option>
+    <option value="110" data-scode="Taper">Taper</option>
+    <option value="111" data-scode="Vehicle or Equipment Cleaner">Vehicle or Equipment Cleaner</option>
+    <option value="112" data-scode="Handyman">Handyman</option>
+    <option value="113" data-scode="Boilermaker">Boilermaker</option>
+    <option value="114" data-scode="Crane Operator">Crane Operator</option>
+    <option value="115" data-scode="Sheet Metal Worker">Sheet Metal Worker</option>
+    <option value="116" data-scode="Mason">Mason</option>
+    <option value="117" data-scode="Roofer">Roofer</option>
+    <option value="118" data-scode="Solar Photo-voltaic Installer">Solar Photo-voltaic Installer</option>
+    <option value="119" data-scode="Well Driller">Well Driller</option>
+    <option value="120" data-scode="Managers">Managers</option>
+    <option value="121" data-scode="Supervisors">Supervisors</option>
+    <option value="122" data-scode="Front-Line Employees">Front-Line Employees</option>
+    <option value="123" data-scode="Human Resources">Human Resources</option>
+    <option value="124" data-scode="Accounting/Finance Staff">Accounting/Finance Staff</option>
+    <option value="125" data-scode="Purchasing Staff">Purchasing Staff</option>
+    <option value="126" data-scode="Shipping Staff">Shipping Staff</option>
+    <option value="127" data-scode="Customer Service">Customer Service</option>
+    <option value="128" data-scode="Electrical Engineer">Electrical Engineer</option>
+    <option value="129" data-scode="Assistant Engineer">Assistant Engineer</option>
+    <option value="130" data-scode="Chief Engineer">Chief Engineer</option>
+    <option value="131" data-scode="Engineering Technician">Engineering Technician</option>
+    <option value="132" data-scode="Maintenance Engineer">Maintenance Engineer</option>
+    <option value="133" data-scode="Mining Engineer">Mining Engineer</option>
+    <option value="134" data-scode="Plant Engineer">Plant Engineer</option>
+    <option value="135" data-scode="Production Engineer">Production Engineer</option>
+    <option value="136" data-scode="Quality Engineer">Quality Engineer</option>
+    <option value="137" data-scode="Safety Engineer">Safety Engineer</option>
+    <option value="138" data-scode="Sales Engineer">Sales Engineer</option>
+    <option value="139" data-scode="Researcher">Researcher</option>
+    <option value="140" data-scode="Research Assistant">Research Assistant</option>
+    <option value="141" data-scode="Mentor">Mentor</option>
+    <option value="142" data-scode="Tutor/Online Tutor">Tutor/Online Tutor</option>
+    <option value="143" data-scode="Teacher">Teacher</option>
+    <option value="144" data-scode="Teaching Assistant">Teaching Assistant</option>
+    <option value="145" data-scode="Lecturer">Lecturer</option>
+    <option value="146" data-scode="Artist">Artist</option>
+    <option value="147" data-scode="Interior Designer">Interior Designer</option>
+    <option value="148" data-scode="Video Editor">Video Editor</option>
+    <option value="149" data-scode="Musician">Musician</option>
+    <option value="150" data-scode="Computer Animator">Computer Animator</option>
+    <option value="151" data-scode="Photographer">Photographer</option>
+    <option value="152" data-scode="Sound Engineer">Sound Engineer</option>
+    <option value="153" data-scode="Motion Picture Director">Motion Picture Director</option>
+    <option value="154" data-scode="Actor">Actor</option>
+    <option value="155" data-scode="Music Producer">Music Producer</option>
+    <option value="156" data-scode="Nurse">Nurse</option>
+    <option value="157" data-scode="Doctor">Doctor</option>
+    <option value="158" data-scode="Physical Therapist">Physical Therapist</option>
+    <option value="159" data-scode="Pharmacist">Pharmacist</option>
+    <option value="160" data-scode="Pharmacy Assistant">Pharmacy Assistant</option>
+    <option value="161" data-scode="Medical Administrator">Medical Administrator</option>
+    <option value="162" data-scode="Medical Laboratory Tech">Medical Laboratory Tech</option>
+    <option value="163" data-scode="Physical Therapy Assistant">Physical Therapy Assistant</option>
+    <option value="164" data-scode="Dental Hygienist">Dental Hygienist</option>
+    <option value="165" data-scode="Medical Transcriptionist">Medical Transcriptionist</option>
+    <option value="168" data-scode="Housekeeper">Housekeeper</option>
+    <option value="169" data-scode="Flight Attendant">Flight Attendant</option>
+    <option value="170" data-scode="Travel Agent">Travel Agent</option>
+    <option value="171" data-scode="Entertainment Specialist">Entertainment Specialist</option>
+    <option value="172" data-scode="Hotel Manager">Hotel Manager</option>
+    <option value="173" data-scode="Front Desk Associate">Front Desk Associate</option>
+    <option value="174" data-scode="Front Desk Manager">Front Desk Manager</option>
+    <option value="175" data-scode="Event Manager/Planner">Event Manager/Planner</option>
+    <option value="176" data-scode="Porter">Porter</option>
+    <option value="177" data-scode="Reservationist">Reservationist</option>
+    <option value="178" data-scode="Scientist">Scientist</option>
+    <option value="179" data-scode="Agriculturist">Agriculturist</option>
+    <option value="180" data-scode="Zoologist">Zoologist</option>
+    <option value="181" data-scode="Food Technologist">Food Technologist</option>
+    <option value="182" data-scode="Geologist">Geologist</option>
+    <option value="183" data-scode="Call Center Representative">Call Center Representative</option>
+    <option value="184" data-scode="Telemarketer">Telemarketer</option>
+    <option value="185" data-scode="Telephone Operator">Telephone Operator</option>
+    <option value="186" data-scode="Counselor">Counselor</option>
+    <option value="187" data-scode="Social Worker">Social Worker</option>
+    <option value="188" data-scode="Makeup Artist">Makeup Artist</option>
+    <option value="189" data-scode="Skin Care Specialist">Skin Care Specialist</option>
+    <option value="190" data-scode="Barber">Barber</option>
+    <option value="191" data-scode="Journalist">Journalist</option>
+    <option value="192" data-scode="Editors/Sub Editors">Editors/Sub Editors</option>
+    <option value="193" data-scode="Editor/Proofreader">Editor/Proofreader</option>
+    <option value="194" data-scode="Content Creator">Content Creator</option>
+    <option value="195" data-scode="Public Relations Specialist">Public Relations Specialist</option>
+    <option value="196" data-scode="Proposal Writer">Proposal Writer</option>
+    <option value="197" data-scode="Social Media Specialist">Social Media Specialist</option>
+    <option value="198" data-scode="Personal Assistant">Personal Assistant</option>
+    <option value="199" data-scode="Security Guard">Security Guard</option>
+    <option value="200" data-scode="Mechanic">Mechanic</option>
+    <option value="201" data-scode="Caretaker or House Sitter">Caretaker or House Sitter</option>
+    <option value="202" data-scode="Librarian/ Library Assistant">Librarian/ Library Assistant</option>
+    <option value="203" data-scode="HVAC Technician">HVAC Technician</option>
+    <option value="204" data-scode="Bank Officer">Bank Officer</option>
+    <option value="205" data-scode="Machinery Operator">Machinery Operator</option>
+    <option value="206" data-scode="Manufacturing Assembler">Manufacturing Assembler</option>
+    <option value="207" data-scode="Instructor">Instructor</option>
+    <option value="208" data-scode="Driver">Driver</option>
+    <option value="209" data-scode="Farm worker">Farm worker</option>
+    <option value="210" data-scode="Waiter">Waiter</option>
+    <option value="211" data-scode="Steward">Steward</option>
+    <option value="212" data-scode="Chef">Chef</option>
+    <option value="213" data-scode="Restaurant Staff">Restaurant Staff</option>
+    <option value="214" data-scode="Writer">Writer</option>
+    <option value="215" data-scode="Engineer">Engineer</option>
+    <option value="216" data-scode="Agriculture Officer">Agriculture Officer</option>
+    <option value="217" data-scode="Professional Trainers">Professional Trainers</option>
+    <option value="218" data-scode="Inspector">Inspector</option>
+    <option value="219" data-scode="Planner">Planner</option>
+    <option value="220" data-scode="Officers">Officers</option>
+    <option value="221" data-scode="Analyst">Analyst</option>
+    <option value="222" data-scode="Associates">Associates</option>
+    <option value="223" data-scode="Store Keepers">Store Keepers</option>
+    <option value="224" data-scode="Cashier">Cashier</option>
+    <option value="225" data-scode="Vocational Trainers">Vocational Trainers</option>
+    <option value="226" data-scode="Document Controller">Document Controller</option>
+    <option value="227" data-scode="Labor">Labor</option>
+    <option value="228" data-scode="Chartered Engineer">Chartered Engineer</option>
+    <option value="229" data-scode="Consultant">Consultant</option>
+    <option value="230" data-scode="Management Trainee">Management Trainee</option>
+    <option value="231" data-scode="Project Coordinator">Project Coordinator</option>
+    <option value="232" data-scode="Technician">Technician</option>
+    <option value="233" data-scode="Mixologist">Mixologist</option>
+    <option value="234" data-scode="Coordinator Assistant">Coordinator Assistant</option>
+    <option value="236" data-scode="Operation Assistant">Operation Assistant</option>
+    <option value="237" data-scode="Copy Writer">Copy Writer</option>
+    <option value="238" data-scode="Factory Worker">Factory Worker</option>
+    <option value="239" data-scode="Intern">Intern</option>
+    <option value="240" data-scode="Trainee">Trainee</option>
+    <option value="241" data-scode="Tech Lead">Tech Lead</option>
+    <option value="242" data-scode="Gardener">Gardener</option>
+    <option value="243" data-scode="Baker">Baker</option>
+    <option value="244" data-scode="Cook">Cook</option>
+    <option value="245" data-scode="Helper">Helper</option>
+    <option value="246" data-scode="Bartender">Bartender</option>
+    <option value="247" data-scode="Barista">Barista</option>
+    <option value="249" data-scode="Cleaner">Cleaner</option>
+    <option value="250" data-scode="Data Engineer">Data Engineer</option>
+    <option value="251" data-scode="System Operator">System Operator</option>
+    <option value="252" data-scode="Software Developer">Software Developer</option>
+    <option value="253" data-scode="Network Engineer">Network Engineer</option>
+    <option value="254" data-scode="Estimator">Estimator</option>
+    <option value="255" data-scode="Data Scientist">Data Scientist</option>
+    <option value="256" data-scode="Project Officer">Project Officer</option>
+    <option value="257" data-scode="Site Manager">Site Manager</option>
+    <option value="258" data-scode="Project Engineer">Project Engineer</option>
+    <option value="259" data-scode="Logistics Officer">Logistics Officer</option>
+    <option value="260" data-scode="Service Advisor">Service Advisor</option>
+    <option value="261" data-scode="Project Assistant">Project Assistant</option>
+    <option value="262" data-scode="Software Tester">Software Tester</option>
+    <option value="263" data-scode="Fabrication Engineer">Fabrication Engineer</option>
+    <option value="264" data-scode="Marine Engineer">Marine Engineer</option>
+    <option value="265" data-scode="Mechatronics Engineer">Mechatronics Engineer</option>
+    <option value="266" data-scode="Delivery Rider">Delivery Rider</option>
+    <option value="267" data-scode="National Specialist">National Specialist</option>
+    <option value="268" data-scode="Automation Specialist">Automation Specialist</option>
+    <option value="269" data-scode="Adviser">Adviser</option>
+    <option value="270" data-scode="Administrator">Administrator</option>
+    <option value="271" data-scode="Social Officer">Social Officer</option>
+    <option value="272" data-scode="Team Leader">Team Leader</option>
+    <option value="273" data-scode="Environmental Officer">Environmental Officer</option>
+    <option value="274" data-scode="DevOps Engineer">DevOps Engineer</option>
+    <option value="275" data-scode="Building Services Engineer">Building Services Engineer</option>
+    <option value="276" data-scode="Admin Officer">Admin Officer</option>
+    <option value="277" data-scode="Telecommunication Engineer">Telecommunication Engineer</option>
+    <option value="278" data-scode="Customer Relations Staff">Customer Relations Staff</option>
+    <option value="279" data-scode="Manufacturing Staff">Manufacturing Staff</option>
+    <option value="280" data-scode="Nutritionist">Nutritionist</option>
+    <option value="281" data-scode="Sales Manager">Sales Manager</option>
+    <option value="282" data-scode="Assistant">Assistant</option>
+    <option value="284" data-scode="Freelancer">Freelancer</option>
+    <option value="285" data-scode="Coordinator">Coordinator</option>
+    <option value="286" data-scode="Latheman">Latheman</option>
+    <option value="287" data-scode="Sub Contractor">Sub Contractor</option>
+    <option value="288" data-scode="Superintendent">Superintendent</option>
+    <option value="289" data-scode="Fabricator">Fabricator</option>
+    <option value="290" data-scode="Fitter">Fitter</option>
+    <option value="291" data-scode="Architectural Visualiser">Architectural Visualiser</option>
+    <option value="292" data-scode="Document Collector">Document Collector</option>
+</select>
+<input type="button" class="btn btn-primary" value="Find Job">
+</div>
+<!----------top companies ------------->
+<section id="companies">
+<div class="conatiner text-center">
+    <h3>TOP COMPANIES</h3>
+
+<div>
+  <img src="./image/company_logo-ccd.png" alt="">
+  <img src="./image/company_logo-GulfTalent.png" alt="">
+  <img src="./image/company_logo-JobStreet.png" alt="">
+  <img src="./image/company_logo-Parsons.png" alt="">
+  <img src="./image/company_logo-MG_Consultants.png" alt="">
+  <img src="./image/company_logo-RN_Constructions.png" alt="">
+  </div>
+
+
+
+
+<div>
+  <img src="./image/company_logo-Web_Lankan.png" alt="">
+  <img src="./image/company_logo-Riyon.jpg" alt="">
+  <img src="./image/company_logo-Renga_Engineering1.jpg" alt="">
+  <img src="./image/company_logo-proconsinternational-logo_(1).png" alt="">
+  <img src="./image/company_logo-Lanka_Com.png" alt="">
+  <img src="./image/company_logo-hansi.png" alt="">
+
+</div>
+
+
+</section>
+
+<!--------Recent Jobs------>
+,<section id="Jobs">
+
+    <div class="container">
+        <h5>RECENT UPDATE</h5>
+        <div class="company-details">
+            <div class="job-update">
+                <h4><b>System Network Engineer</b></h4>
+                <p>JobStreet</p>
+                <i class="far fa-calendar-alt"></i><span> 7 days Left</span><br>
+                <i class="fa fa-map-marker "></i><span> Singapore</span>
+            </div>
+            
+            <div class="apply-btn">
+              <button type="button" class="btn btn-primary">Apply</button>
+            </div>
+        </div>
+        <div class="company-details">
+          <div class="job-update">
+              <h4><b>Associate Engineer</b></h4>
+              <p>eBuilder</p>
+              <i class="far fa-calendar-alt"></i><span> 13 days Left</span><br>
+              <i class="fa fa-map-marker "></i><span> Colombo 05</span>
+          </div>
+          
+          <div class="apply-btn">
+            <button type="button" class="btn btn-primary">Apply</button>
+          </div>
+      </div>
+      <div class="company-details">
+        <div class="job-update">
+            <h4><b>Trainee (Technician)</b></h4>
+            <p>J.V> Gokal Ceylon(Pvt) Ltd</p>
+            <i class="far fa-calendar-alt"></i><span> 10 days Left</span><br>
+            <i class="fa fa-map-marker "></i><span> Wellampitiya</span>
+        </div>
+        
+        <div class="apply-btn">
+          <button type="button" class="btn btn-primary">Apply</button>
+        </div>
+    </div>
+    <div class="company-details">
+      <div class="job-update">
+          <h4><b>Senior Analyst / Manager Corporate Finance</b></h4>
+          <p>JobStreet</p>
+          <i class="far fa-calendar-alt"></i><span> 7 days Left</span><br>
+          <i class="fa fa-map-marker "></i><span> Abu Dhabi, UAE</span>
+      </div>
+      
+      <div class="apply-btn">
+        <button type="button" class="btn btn-primary">Apply</button>
+      </div>
+  </div>
+  <div class="company-details">
+    <div class="job-update">
+        <h4><b>Draftsman</b></h4>
+        <p>VVK Alucon Industries (Pvt) Ltd</p>
+        <i class="far fa-calendar-alt"></i><span> 13 days Left</span><br>
+        <i class="fa fa-map-marker "></i><span> Kelaniya</span>
+    </div>
+    <div class="apply-btn">
+      <button type="button" class="btn btn-primary">Apply</button>
+    </div>
+    
+</div>
+<div class="company-details">
+  <div class="job-update">
+      <h4><b>Senior System Administrator</b></h4>
+      <p>Paragon Software Lanka</p>
+      <i class="far fa-calendar-alt"></i><span> 5 days Left</span><br>
+      <i class="fa fa-map-marker "></i><span> Nugegoda</span>
+  </div>
+  
+  <div class="apply-btn">
+    <button type="button" class="btn btn-primary">Apply</button>
+  </div>
+</div>
+<ul class="pagelink text-center">
+  <li class="left-arrow">&#8592;</li>
+  <li class="active ">1</li>
+  <li>2 </li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  
+  <li class="right-arrow">&#8594;</li>
+
+</ul>
+    </div>
+</section>
+
+<!----------Site Stats------------->
+<section id="site-stats">
+<div class="conatiner text-center">
+  <h3>TECHJOBS SITE STARS </h3>
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-6">
+          <div class="stats-box">
+            <i class="fas fa-user-tie"></i><span><small>100k +</small></span>
+            <p>Job Seekers</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="stats-box">
+            <i class="fab fa-slideshare"></i><span><small>500 +</small></span>
+            <p>Employers</p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-6">
+        <div class="stats-box">
+          <i class="fas fa-briefcase"></i><span><small>10k +</small></span>
+          <p>Active Jobs</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="stats-box">
+          <i class="far fa-building"></i><span><small>400 +</small></span>
+          <p>Companies</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+      
+  </div>
+</div>
+
+</section>
+<!----------------App banner----------------->
+<section id="app-banner" class="text-center">
+  <h1>Find Jobs On Mobile, Download TechJobs App</h1>
+  <img src="./image/app-store-png-logo-33107.png" alt="">
+  <img src="./image/play-store-logo-33874.png" alt="">
+  
+</section>
+<!---------footer-------------->
+
+<section id ="footer" class="text-center">
+  <img src="./image/images-Logo.png" alt="">
+ <a href="#"> <i class="fab fa-facebook"></i></a>
+ <a href="#"><i class="fab fa-instagram-square"></i></a>
+ <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+ <a href="#"><i class="fab fa-linkedin"></i></a>
+ <hr>
+ <p>Copyright<i class="far fa-copyright"></i> 2021  All rights reserved </p>
+</section>
+</body>
+</html>
